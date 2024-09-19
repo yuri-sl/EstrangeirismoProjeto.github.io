@@ -51,6 +51,10 @@ footer a:hover {
     text-transform: uppercase;
 }
 
+.banner {
+    width: 30%;
+}
+
 .imagem {
     display: block;
     margin: 0 auto;

@@ -13,12 +13,26 @@ header p {
     font-family: "Open Sans";
 }
 
+header h3 {
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
 
 main li {
     color: #003057;
     font-weight: bold;
     font-size: 48px;
 
+}
+
+main li p {
+    color: black;
+    font-size: 42px;
+    text-align: justify;
+    font-weight: normal;
 }
 
 footer {
@@ -35,4 +49,12 @@ footer a {
 footer a:hover {
     color: red;
     text-transform: uppercase;
+}
+
+.imagem {
+    display: block;
+    margin: 0 auto;
+    top: 0px;
+    border: 0px;
+    padding: 0px;
 }

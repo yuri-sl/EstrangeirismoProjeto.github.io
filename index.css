@@ -1,49 +1,76 @@
+/* Base Styles (Mobile-First Approach) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    padding: 10px;
+}
+
 header h1 {
-    font-size: 64px;
+    font-size: 2rem;
+    /* 32px */
     font-weight: bold;
     text-align: center;
     background-color: rgb(23, 23, 168);
     color: white;
+    padding: 10px 0;
 }
 
 header p {
     color: black;
-    font-size: 42px;
+    font-size: 1rem;
+    /* 16px */
     text-align: justify;
-    font-family: "Open Sans";
+    margin: 10px 0;
 }
 
 header h3 {
     color: black;
     text-align: center;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 1.2rem;
+    /* 19px */
+    margin-top: 20px;
 }
 
+main ol {
+    padding-left: 20px;
+}
 
 main li {
     color: #003057;
     font-weight: bold;
-    font-size: 48px;
-
+    font-size: 1.2rem;
+    /* 19px */
+    margin-bottom: 15px;
 }
 
 main li p {
     color: black;
-    font-size: 42px;
+    font-size: 1rem;
+    /* 16px */
     text-align: justify;
     font-weight: normal;
+    margin-top: 5px;
 }
 
 footer {
     background-color: rgb(23, 23, 168);
     color: white;
     font-weight: bold;
-
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
 }
 
 footer a {
     color: white;
+    text-decoration: none;
 }
 
 footer a:hover {
@@ -52,13 +79,94 @@ footer a:hover {
 }
 
 .banner {
-    width: 30%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
 }
 
 .imagem {
+    width: 100%;
+    height: auto;
     display: block;
-    margin: 0 auto;
-    top: 0px;
-    border: 0px;
-    padding: 0px;
+    margin: 10px auto;
+    border: 0;
+    padding: 0;
+}
+
+/* Media Queries for Larger Screens */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 3rem;
+        /* 48px */
+    }
+
+    header p {
+        font-size: 1.2rem;
+        /* 19px */
+    }
+
+    header h3 {
+        font-size: 1.5rem;
+        /* 24px */
+    }
+
+    main li {
+        font-size: 1.5rem;
+        /* 24px */
+    }
+
+    main li p {
+        font-size: 1.2rem;
+        /* 19px */
+    }
+
+    .banner {
+        width: 50%;
+    }
+
+    .imagem {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 4rem;
+        /* 64px */
+    }
+
+    header p {
+        font-size: 1.4rem;
+        /* 22px */
+    }
+
+    header h3 {
+        font-size: 1.8rem;
+        /* 29px */
+    }
+
+    main li {
+        font-size: 1.8rem;
+        /* 29px */
+    }
+
+    main li p {
+        font-size: 1.4rem;
+        /* 22px */
+    }
+
+    .banner {
+        width: 30%;
+    }
+
+    .imagem {
+        width: 30%;
+    }
 }

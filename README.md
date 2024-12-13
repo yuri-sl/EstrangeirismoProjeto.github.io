@@ -18,7 +18,7 @@ Você pode visualizar o projeto diretamente no seguinte link:
 
 ## Tecnologias Utilizadas  
 - **HTML5**  
-- **CSS3**  
+- **CSS**  
 
 ## Contribuição  
 Se você quiser contribuir para o projeto, fique à vontade para clonar o repositório e enviar suas sugestões via pull request.  
